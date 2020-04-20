@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#IzbornikDugme{
+    display: none;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#Izbornik a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: 10px;
+}
+
+#Izbornik a:hover{
+    background-color: rgb(165, 156, 156);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wrapper{
+    width: 70%;
+    margin-left: 30%;
+    padding: 0 5%;
+}
+
+.VilaKolonaWrapper{
+    width: 33%;
+    float: left;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+img:hover{
+    opacity: .2;
+}
+
+form{
+    clear: both;
+}
+
+form>div{
+    margin-top: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+}
+
+.KolonaTextbox{
+    width: calc(100% / 3);
+    float: left;
+}
+
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    #IzbornikDugme{
+        display: inline;
+        cursor: pointer;
+    }
+    nav{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    nav div span{
+        margin-left: 10px;
+    }
+    .VilaKolonaWrapper{
+        width: 100%;
+    }
+    #wrapper{
+        margin: 0;
+        width: 100%;
+    }
+    #Izbornik a{
+        border-bottom: 1px solid white;
+    }
+    .KolonaTextbox{
+        width: 100%;
+    }
+    form div{
+        margin-top: 10px;
+    }
+    #Izbornik{
+        transition: .7s;
+        overflow: hidden;
+    }
+}

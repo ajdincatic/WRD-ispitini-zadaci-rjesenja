@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <title>Ispitni zadatak</title>
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="stilovi.css">
+  <link href="jquery-ui.css" rel="stylesheet">
+  <script src="jquery-validation-1.16.0/dist/jquery.validate.js"></script>
+  <script type="text/javascript" src="mojSkript.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="sadrzaj">
+    <div class="lijevi">
+      <div class="lijeviUnitrasnji">
+        <h2>Konverter Valuta</h2>
+
+        <div class="lijeviSrednji">
+          <input type="text" id="valuta"> Code valute <br>
+          <input type="text" id="indexrazmjene"> Odnos sa Eur
+          <br>
+          <button name="snimi" id="snimi" value="snimi">Snimi</button>
+          <br><br>
+          <div id="accordion">
+            
+          </div>
+        </div>
+        <div class="lijeviDonji">
+          <input type="text" id="valuta" placeholder="CODE Izvorne valute"> <br>
+          <input type="text" id="indexrazmjene" placeholder="Iznos razmjene">
+          <br>
+          <input type="text" id="valuta" placeholder="CODE Destinacijske valute"> <br>
+          <br>
+          <button name="snimi" id="konvertuj" value="snimi">Konvertuj</button>
+          <br>
+          <br>
+          <input type="text" id="rezultat" id="indexrazmjene"> Obračunati iznos
+
+        </div>
+      </div>
+    </div>
+    <div class="desni">
+      <div class="desniGornji">
+        <div class="firma1">
+          <br>
+          <p>ISPIT</p>
+        </div>
+        <div class="izborSrednji">
+          <ul id="listaSrednja">
+            <li class="izborLinije"><a href="">Programiranje I</a></li>
+            <li class="izborLinije"><a href="">WRD</a></li>
+            <li class="izborLinije">Pređi mišem za jos
+              <ul id="listaUgn">
+                <li class="izborLinijeUg"><a href="">Programiranje I</a></li>
+                <li class="izborLinijeUg"><a href="">WRD</a></li>
+                <li class="izborLinijeUg">PSR</li>
+                <li class="izborLinijeUg">SP</li>
+              </ul>
+            </li>
+            <li class="izborLinije">SP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="desniSrednji">
+        <div class=".desniSrednjiunutrasnji">
+          <form id="forma">
+            <center>
+              <h3>Prijavi se</h3>
+            </center><br /><br />
+            <hr />
+            <p>
+              <label for="username" id="labelusername">Vaše ime i prezime</label>
+              <input type="text" id="username" name="username" />
+
+            </p>
+
+            <p>
+              <label for="brindeksa" id="labelbrindeksa" style=" display:inline">Indeks / Godina:</label>
+              <input type="text" id="brindeksa" name="brindeksa" style=" width: 50px" />
+              <input type="text" id="godinaupisa" name="godinaupisa" style=" width: 50px" />
+            </p>
+            <p>
+              <label>Omiljena oblast:</label>
+              <select name="izbor">
+                <option>Programiranje</option>
+                <option>WRD</option>
+                <option>Baze podataka</option>
+                <option>SI</option>
+              </select>
+            </p>
+            <p>
+              <label for="email" id="labelemail">Predložena email adresa</label>
+              <input type="email" id="email" name="email" />
+            </p>
+            <p>
+              <input type="submit" id="save" value="Prijavi se" onclick="" />
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="desniDonji">
+        <div class="firma">
+          <br>
+          <p>&copy;Copyright FIT Ispit 2018</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+<script>
+  $("#accordion").accordion({
+    heightStyle: "content"
+  });
+</script>
+
+</html>

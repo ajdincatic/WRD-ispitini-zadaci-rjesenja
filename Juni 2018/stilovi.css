@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sadrzaj{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lijevi{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(61, 79, 93);
+    color: white;
+    padding: 20px;
+    float: left;
+}
+
+.lijeviSrednji{
+    margin-top: 80px;
+}
+
+.lijeviDonji{
+    margin-top: 30px;
+}
+
+.desni{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.desniGornji,.desniDonji{
+    height: 20%;
+    text-align: center;
+}
+
+.desniSrednji{
+    height: 60%;
+    box-shadow: 12px 12px 15px black;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px; 
+}
+
+.desniGornji,.desniSrednji,.desniDonji{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.firma1,.firma{
+    height: 50%;
+    background-color: rgb(229, 230, 250);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+    color: white;
+    background-color: rgb(73, 82, 79);
+    padding: 7px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+li a{
+    color: white;
+}
+
+#listaSrednja{
+    margin-top: 10px;
+}
+
+#listaSrednja>li{
+    display: inline;
+}
+
+li ul{
+    position: absolute;
+    display: none;
+    right: 25%;
+}
+
+#listaSrednja>li:nth-child(3):hover ul{
+    display: block;
+}
+
+form p{
+    margin-top: 25px;
+}
+
+.error{
+    border-color: red;
+}
