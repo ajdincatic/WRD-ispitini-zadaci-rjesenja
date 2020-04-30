@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!-- saved from url=(0027)https://s44.wrd.app.fit.ba/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web razvoj i dizajn ispit 28.04.2018</title>
+
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: rgb(243, 236, 226);
+		}
+
+		header {
+			margin: 0 auto;
+			width: 940px;
+			height: 20%;
+		}
+
+		nav {
+			background-color: #555;
+			height: 3%;
+		}
+
+		li a {
+			color: black;
+			text-decoration: none;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		nav ul {
+			position: relative;
+			top: 10px;
+		}
+
+		ul li {
+			width: 300px;
+		}
+
+		nav>ul li {
+			display: inline;
+			margin-left: 20px;
+		}
+
+		nav ul li ul li {
+			display: block;
+			text-align: center;
+			padding: 7px;
+		}
+
+		ul li ul li:nth-child(even) {
+			background-color: #C9C9C9;
+		}
+
+		ul li ul li:nth-child(odd) {
+			background-color: #DBDBDB;
+		}
+
+		ul li:nth-child(2) ul {
+			position: absolute;
+			display: none;
+			left: 5%;
+			margin-top: 10px;
+		}
+
+		ul li:nth-child(2) ul li {
+			width: 150px;
+			text-align: left;
+			font-size: 14px;
+		}
+
+		ul li ul li:hover {
+			background: #555;
+			color: #FFF;
+		}
+
+		a[href="http://www.fit.ba"]:hover {
+			color: red;
+		}
+
+		ul li a:hover {
+			color: #FFF;
+			transition: 2s;
+		}
+
+		ul li:nth-child(2):hover ul {
+			display: block;
+		}
+
+		nav {
+			position: relative;
+			bottom: 20px;
+		}
+
+		footer {
+			background-color: #ACABA7;
+			padding: 15px;
+			color: white;
+		}
+
+		.wrapper {
+			margin: 0 auto;
+			width: 940px;
+			background-color: whitesmoke;
+		}
+
+		div {
+			padding-bottom: 5px;
+		}
+
+		.animacija {
+			animation: animacija 4s linear;
+			animation-delay: 1s;
+			animation-direction: alternate;
+			animation-iteration-count: 2;
+		}
+
+		aside a {
+			font-weight: bold;
+			margin: 0 auto;
+			color: rgb(32, 56, 100);
+			text-decoration: none;
+		}
+
+		aside div {
+			padding: 20px 0 20px 15px;
+			border-bottom: 1px dotted lightgray;
+		}
+
+		figure {
+			float: left;
+			border: 1px solid grey;
+			padding: 7px;
+		}
+
+		aside {
+			width: 40%;
+			padding: 15px;
+			border-left: 1px solid grey;
+			float: right;
+		}
+
+		.novosti {
+			display: inline-block;
+			width: 60%;
+		}
+
+		footer {
+			height: 5%;
+			position: fixed;
+			bottom: 2px;
+			width: 940px;
+			padding: 10px;
+		}
+
+		hgroup h3,
+		.popular-services,
+		.contact-details h2 {
+			font-family: 'Tajawal', sans-serif;
+			color: rgb(32, 56, 100);
+		}
+
+		hgroup h2,
+		figcaption,
+		p,
+		label,
+		legend {
+			color: grey;
+		}
+
+		fieldset {
+			transform: rotate(180deg);
+			margin-bottom: 50px;
+			padding: 20px;
+		}
+
+		td input {
+			padding: 3px;
+			border: 1px solid grey;
+		}
+
+		table td {
+			padding: 5px 60px;
+		}
+
+		form input[type='text']:focus,
+		form input[type='text']:hover {
+			background-color: #d0e2f0;
+			cursor: pointer
+		}
+
+		/**/
+
+		section[class="contact-details"] p {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+
+		@keyframes animacija {
+			0% {
+				background-color: rgb(54, 30, 20);
+			}
+
+			50% {
+				background-color: whitesmoke;
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+
+			/* primjeni za sve ekrane kod kojih je max sirina 768 piksela */
+			nav ul li:hover {
+				display: block;
+			}
+
+			ul {
+				padding: 0;
+			}
+
+			nav>ul li {
+				width: 100%;
+				margin: 0;
+				display: block;
+				padding: 10px;
+				border-top: 1px solid white;
+				text-align: center;
+			}
+
+			article,
+			aside {
+				width: 100%;
+			}
+
+			aside {
+				background-color: whitesmoke;
+				margin-bottom: 30px;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<img src="./Web razvoj i dizajn ispit 28.04.2018_files/header.jpg" alt="">
+
+			<nav>
+				<ul>
+					<li>
+						<a href="https://s44.wrd.app.fit.ba/#" class="current">Fakultet</a>
+					</li>
+					<li>
+						<a href="https://s44.wrd.app.fit.ba/#">Upis</a>
+						<ul>
+							<li>
+								<a href="https://s44.wrd.app.fit.ba/#">�&nbsp;ta upisati</a>
+							</li>
+							<li>
+								<a href="https://s44.wrd.app.fit.ba/#">Način studiranja</a>
+							</li>
+							<li>
+								<a href="http://www.fit.ba/" target="_blank">Cijene studija</a>
+							</li>
+							<li>
+								<a href="https://s44.wrd.app.fit.ba/#">FAQ</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://s44.wrd.app.fit.ba/#">Studij</a>
+					</li>
+					<li>
+						<a href="https://s44.wrd.app.fit.ba/#">Istraživanje</a>
+					</li>
+					<li>
+						<a href="https://s44.wrd.app.fit.ba/#">Alumni</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="novosti">
+			<article>
+				<figure>
+					<img src="./Web razvoj i dizajn ispit 28.04.2018_files/1.jpg" alt="Machine learning">
+					<figcaption></figcaption>
+				</figure>
+
+				<div>
+
+					<hgroup>
+						<h2>AI and Machine Learning</h2>
+						<h3>Learning course - Mostar</h3>
+					</hgroup>
+					<p>Introductory level of AI and machine learning using Python as the main programming language.</p>
+				</div>
+			</article>
+			<article>
+				<figure class="animacija">
+					<img src="./Web razvoj i dizajn ispit 28.04.2018_files/2.jpg" alt="Microsoft Office Specialist">
+					<figcaption>Microsoft Office Specialist</figcaption>
+				</figure>
+				<div>
+					<hgroup>
+						<h2>Microsoft Office Specialist</h2>
+						<h3>World Championship</h3>
+					</hgroup>
+					<p>Drugo IT takmičenje u Bosni i Hercegovini kao dio Svjetskog Microsoft Office Specialist
+						takmičenja.</p>
+
+				</div>
+			</article>
+			<section>
+				<article>
+					<!-- FORMA -->
+					<fieldset>
+						<legend>Osobni podaci</legend>
+						<form action="https://s44.wrd.app.fit.ba/#">
+							
+									A<input type="radio" name="izbor" checked="">
+									B<input type="radio" name="izbor">
+									C<input type="radio" name="izbor"><input type="range" name="range" value="2000" min="100" max="3000"><select name="odabir" id="ajdi">
+										<option value="ja">1</option>
+										<option value="jaaa" selected="">2</option>
+									</select><table>
+								<tbody><tr>
+									<td>Ime:</td>
+									<td><input type="text" placeholder="Samo ime"></td>
+								</tr>
+								<tr>
+									<td>Prezime:</td>
+									<td><input type="text" placeholder="Samo prezime"></td>
+								</tr>
+								<tr>
+									<td>Email:</td>
+									<td><input type="text" placeholder="primjer@domena.com"></td>
+								</tr>
+								<tr>
+									<td>Godina studija:</td>
+									<td><input type="number" value="2"></td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="NARUČI"></td>
+								</tr>
+								<tr>
+								</tr>
+								<tr>
+									
+								</tr>
+								<tr>
+									
+								</tr>
+							</tbody></table>
+						</form>
+					</fieldset>
+				</article>
+			</section>
+
+
+		</section>
+
+		<aside>
+			<section class="popular-services">
+				<h2>Najpopularniji servisi</h2>
+				<div>
+					<a href="https://s44.wrd.app.fit.ba/">DLWMS sistem</a>
+				</div>
+				<div>
+					<a href="https://s44.wrd.app.fit.ba/">Microsoft Imagine</a>
+				</div>
+				<div>
+					<a href="https://s44.wrd.app.fit.ba/">Office 365</a>
+				</div>
+				<div>
+					<a href="https://s44.wrd.app.fit.ba/">VPS</a>
+				</div>
+
+				<br>
+
+			</section>
+			<section class="contact-details">
+				<h2 style="cursor:pointer;">Kontakt -&gt; TRY IT &#8595;</h2>
+				<p>Fakultet informacijskih tehnologija
+					<br> Univerzitet "Džemal Bijedić" Mostar
+					<br> Sjeverni logor br. 12
+					<br>
+				</p>
+			</section>
+		</aside>
+		<footer>
+			� Fakultet informacijskih tehnologija
+		</footer>
+
+		<form id="forma" action="https://s44.wrd.app.fit.ba/#">
+			<input type="text" name="broj1"> +
+			<input type="text" name="broj2"> =
+			<input type="text" name="vrijednost" disabled="">
+			<br>
+			<input type="button" name="dugme" value="Saberi">
+		</form>
+		<br>
+		Random brojevi <input disabled="" type="text" name="vrijednost2">
+		<br>
+		<br>
+		<br>
+	</div>
+	<!-- .wrapper -->
+
+
+<script>
+
+	var sir = document.documentElement.clientWidth; // sirina ekrana
+	var vis = document.documentElement.clientHeight; // visina ekrana
+	var s = document.querySelector('section[class="contact-details"] p');
+	var ss = window.getComputedStyle(s).maxHeight; // vraca css direktno
+
+	var x = document.querySelector('section[class="contact-details"] h2');
+	x.addEventListener('click', function () {
+		var y = document.querySelector('section[class="contact-details"] p');
+		if (y.style.maxHeight) {
+			y.style.maxHeight = null;
+		} else {
+			y.style.maxHeight = y.scrollHeight + "px"; 		 // vraca visinu elementa ukljucujuci padding
+		}
+	})
+
+	// drugi nacin
+	/*x.onclick = function(){
+		var y = document.querySelector('section[class="contact-details"] p');
+		if (y.style.maxHeight) {
+			y.style.maxHeight = null;
+		} else {
+			y.style.maxHeight = y.scrollHeight + "px";
+		}
+	}*/
+
+	/* calc */
+	document.querySelector('#forma input[name="vrijednost"]').disabled = true;
+	document.querySelector('#forma input[type="button"]').addEventListener('click', function () {
+		var broj1 = document.querySelector('input[name="broj1"]').value;
+		var broj2 = document.querySelector('input[name="broj2"]').value;
+		document.querySelector('#forma input[name="vrijednost"]').value = Number(broj1) + Number(broj2);
+	})
+
+	setInterval(function () {
+		document.querySelector('input[name="vrijednost2"]').value = Math.floor(Math.random() * 20);
+	},500)
+
+
+</script>
+
+</body></html>
